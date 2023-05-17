@@ -3,28 +3,26 @@ using namespace std;
 
 class Room {
     public:
-    int length;
-    int breadth;
-    int height;
+    int length,breadth,height;
 
-    void calculateArea(int a,int b) {
-        length = a;
-        breadth = b;
+    void info(){
+        cout<<"Enter length,breadth,and height:";
+        cin>>length>>breadth>>height;
+    }
+    void calculateArea() {
         cout<<"The area of the room is:"<< length * breadth<<endl;
 
     }
-    void calculateVolume(int a, int b,int c) {
-        height = c ; 
+    void calculateVolume() {
           cout<<"The volume of the room is:"<<length * breadth * height;
 
     }
 };
     int main(){
     Room obj401;
-
-    //calculate and display the area and volume of the room
-    obj401.calculateArea(10,20);
-    obj401.calculateVolume(10,20,30);
+    obj401.info();
+    obj401.calculateArea();
+    obj401.calculateVolume();
 
     
 
