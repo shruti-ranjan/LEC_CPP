@@ -1,33 +1,17 @@
-// Program to build a simple calculator using switch Statement
-#include <iostream>
+#include<iostream>
 using namespace std;
+int main()
+{
+    int sex;
+    int balance;
+    int bonus;
+    int male = 0;
+    int female = 1;
+    if(sex==female)
+      if(balance>50000)
+       bonus = 5*balance;
+    else
+     balance = balance + bonus;
+       
 
-int main() {
-    char oper;
-    float num1, num2;
-    cout << "Enter an operator (+, -, *, /): ";
-    cin >> oper;
-    cout << "Enter two numbers: " << endl;
-    cin >> num1 >> num2;
-
-    switch (oper) {
-        case '+':
-            cout << num1 << " + " << num2 << " = " << num1 + num2;
-            break;
-        case '-':
-            cout << num1 << " - " << num2 << " = " << num1 - num2;
-            break;
-        case '*':
-            cout << num1 << " * " << num2 << " = " << num1 * num2;
-            break;
-        case '/':
-            cout << num1 << " / " << num2 << " = " << num1 / num2;
-            break;
-        default:
-            // operator is doesn't match any case constant (+, -, *, /)
-            cout << "Error! The operator is not correct";
-            break;
-    }
-
-    return 0;
-}
+      }
