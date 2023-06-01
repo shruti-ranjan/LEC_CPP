@@ -1,7 +1,8 @@
-#include<iostream>
+#include<iostream>      //objects as datatypes
 using namespace std;
-class complex
-{
+class complex{
+
+
     private:
      float real;
      float imag;
@@ -18,15 +19,14 @@ void showvalue(){
 
     cout<<"("<<real<<","<<imag<<")";
 }
-void add(complex c1, complex c2)
-{
-    real=c1.real+c2.real;
+void add(complex c1, complex c2)    
+    {real=c1.real+c2.real;
     imag=c1.imag+c2.imag;
 }
 };
 int main()
 {
-    complex c1,c2,c3;
+    complex c1,c2,c3;   //complex is a user defined datatype , can't use int ,char or any other datatype as we are using real and imaginary values
     cout<<"Enter first complex number:"<<endl;
     c1.readvalue();
     cout<<"Enter the second complex number:"<<endl;
