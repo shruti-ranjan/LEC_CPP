@@ -26,7 +26,7 @@ class Complex{
 
     void showvalue()
     {
-        cout<<"("<<real<<" "<<imag<<")";
+        cout<<"("<<real<<"+i "<<imag<<")";
 
     }
 
