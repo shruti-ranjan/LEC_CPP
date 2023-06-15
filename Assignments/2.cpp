@@ -5,18 +5,18 @@ class Complex{
     float real;
     float imag;
     
-    Complex()
+    Complex()    //default constructor
     {
         float real,imag;
     }
 
-    Complex (float re,float im)
+    Complex (float re,float im)      //parameterized constructor
     {
         real = re;
         imag = im;
     }
 
-    void getvalue()
+    void getvalue()             //member function
     {
         cout<<"Enter the real part:";
         cin>>real;
@@ -24,15 +24,15 @@ class Complex{
         cin>>imag;
     }
 
-    void showvalue()
+    void showvalue()         //member function
     {
         cout<<"("<<real<<"+i "<<imag<<")";
 
     }
 
-    };
+    };    //end of class
 
-Complex add(Complex a,Complex b)
+Complex add(Complex a,Complex b)        //non member function
 {
    Complex result;
    result.real=a.real+b.real;

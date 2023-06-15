@@ -4,26 +4,28 @@ using namespace std;
 
 const double PI = 3.14159;
 
-// Function to calculate the area of a cube
-int calculateArea(int length) {
+int calculateArea(int length)            //funtion to calculate area of the cube
+{
     return 6 * length * length;
 }
- // Function to calculate the area of a circle
-double calculateArea(double radius) {
+
+double calculateArea(double radius)       // Function to calculate the area of a circle
+ {
     return PI * pow(radius, 2);
 }
 
-// Function to calculate the area of a rectangle
-double calculateArea(double length, double breadth) {
+double calculateArea(double length, double breadth)    //function to calculate area of the rectangle
+
+ {
     return length * breadth;
 }
 
 int main() {
     int choice;
-    cout << "Choose the shape:\n";
-    cout << "1. Cube\n";
-    cout << "2. Circle\n";
-    cout << "3. Rectangle\n";
+    cout << "Choose the shape:"<<endl;
+    cout << "1. Cube"<<endl;
+    cout << "2. Circle"<<endl;
+    cout << "3. Rectangle"<<endl;
     cout << "Enter your choice (1-3): ";
     cin >> choice;
 
@@ -45,7 +47,7 @@ int main() {
         cin >> breadth;
         cout << "Area of the rectangle: " << calculateArea(length, breadth) << endl;
     } else {
-        cout << "Invalid choice. Please choose a valid option." << endl;
+        cout << "Invalid choice." << endl;
     }
 
     return 0;
